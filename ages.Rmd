@@ -1,0 +1,22 @@
+---
+title: "congress_ages"
+author: "Nishu Lahoti"
+date: "2/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(gov.1005.data)
+library(dplyr)
+```
+
+```{r}
+
+data(congress)
+congress %>% arrange(desc(age))
+
+```
+
